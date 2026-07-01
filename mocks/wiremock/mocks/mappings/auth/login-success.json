@@ -1,0 +1,21 @@
+{
+    "request":{
+        "method": "POST",
+        "url": "/auth/login",
+        "bodyPatterns":[
+            {
+                "equalToJson":{
+                    "email": "alfredo@gmail.com",
+                    "password": "minhasenha123"
+                }
+            }
+        ]
+    },
+    "response": {
+        "status": 200,
+        "headers":{
+            "Content-Type": "application/json"
+        },
+        "bodyFileName": "login-success-response.json"
+    }
+}
